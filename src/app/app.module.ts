@@ -21,6 +21,7 @@ const myRouter:Routes = [
   {
     path:"add",
     component:AddEmployeeComponent
+
   },
   {
     path:"view",
