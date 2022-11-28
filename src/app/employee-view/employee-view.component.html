@@ -4,82 +4,24 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <table class="table mt-4">
-                <tr>
-                    <td><strong>Name</strong></td>
-                    <td><strong>Employee Code</strong></td>
-                    <td><Strong>Year of Experience</Strong></td>
-                    <td><strong>Salary</strong></td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>EMP123</td>
-                    <td>3</td>
-                    <td>45000</td>
+                <thead>
+                    <tr>
+                        <td><strong>Name</strong></td>
+                        <td><strong>Designation</strong></td>
+                        <td><strong>Company Name</strong></td>
+
+                        <td><strong>Salary</strong></td>
+                    </tr>
+                </thead>
+                
+                <tr *ngFor = "let i of Employee">
+                    <td>{{i.name}}</td>
+                    <td>{{i.designation}}</td>
+                    <td>{{i.companyname}}</td>
+                    <td>{{i.salary}}</td>
                     
                 </tr>
-                <tr>
-                    <td>Luther</td>
-                    <td>EMP124</td>
-                    <td>2</td>
-                    <td>30000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Wilson</td>
-                    <td>EMP456</td>
-                    <td>1</td>
-                    <td>25000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Antony</td>
-                    <td>EMP078</td>
-                    <td>10</td>
-                    <td>100000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Susan</td>
-                    <td>EMP234</td>
-                    <td>3</td>
-                    <td>50000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Ann</td>
-                    <td>EMP126</td>
-                    <td>3</td>
-                    <td>27000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Cindiya</td>
-                    <td>EMP400</td>
-                    <td>2</td>
-                    <td>38000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Jeorge</td>
-                    <td>EMP236</td>
-                    <td>4</td>
-                    <td>47000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Ayisha</td>
-                    <td>EMP308</td>
-                    <td>5</td>
-                    <td>67000</td>
-                    
-                </tr>
-                <tr>
-                    <td>Fathima</td>
-                    <td>EMP307</td>
-                    <td>4</td>
-                    <td>100000</td>
-                    
-                </tr>
+                
             </table>
         </div>
     </div>
